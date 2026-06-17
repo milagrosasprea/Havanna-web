@@ -1,30 +1,28 @@
-/* GENERAL */
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffd54f;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #ffcd2a;
     color: #3b2a1a;
 }
 
-/* TITULOS */
 h1, h2 {
-    color: #b22222;
+    color: #e96716;
     font-size: 32px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5efe6;
+    background-color: #cc871f;
     padding: 15px 40px;
 }
 
 header img {
-    width: 220px;
+    width: 300px;
 }
 
 header nav {
@@ -33,17 +31,16 @@ header nav {
     gap: 10px;
 }
 
-/* BUSCADOR */
 header input {
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid ;
 }
 
-/* BOTONES */
 button {
     padding: 10px 18px;
-    background-color: #b22222;
+    background-color: #e96716;
     color: white;
     border: none;
     border-radius: 8px;
@@ -51,90 +48,386 @@ button {
 }
 
 button:hover {
-    background-color: #8b1a1a;
+    background-color: #e96716;
 }
 
-/* IMAGEN PRINCIPAL */
 section:first-of-type {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 section:first-of-type img {
-    width: 45%;
-    height: 220px;
+    width: 60%;
+    height: 450px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* MENU */
 nav {
     text-align: center;
     margin: 25px 0;
 }
 
 nav button {
-    margin: 0 10px;
+    margin: 0 40px;
 }
 
-/* SECCION QUE ES HAVANNA */
-section:nth-of-type(2) {
-    width: 80%;
-    margin: 30px auto;
-    background-color: #f5efe6;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
+section:nth-of-type(2){
+    width:90%;
+    margin:40px auto;
+    background:none;
+    padding:0;
+    text-align:center;
 }
 
-/* CONTENEDOR INTERNO */
-section:nth-of-type(2) > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+section:nth-of-type(2) > div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
 }
 
-/* TEXTOS */
-section:nth-of-type(2) p {
-    width: 30%;
-    font-size: 15px;
-    line-height: 1.5;
+section:nth-of-type(2) p{
+    width:300px;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:22px;
+    font-weight:bold;
+    line-height:1.8;
+    color:#3b2a1a;
 }
 
-/* IMAGEN CENTRO */
-section:nth-of-type(2) img {
-    width: 250px;
-    border-radius: 10px;
+section:nth-of-type(2) img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+
+    background-color:#cc871f;
+    padding:20px;
+    border-radius:20px;
 }
 
-/* LANZAMIENTOS */
-section:nth-of-type(3) {
-    text-align: center;
-    margin-top: 40px;
+.lanzamientos-section{
+    text-align:center;
+    margin-top:100px;
 }
 
-/* TARJETAS PRODUCTOS */
-section:nth-of-type(3) article {
-    display: inline-block;
-    width: 180px;
-    margin: 15px;
-    background-color: #f5efe6;
-    padding: 12px;
-    border-radius: 10px;
-    vertical-align: top;
+.lanzamientos-container{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
 }
 
-/* IMAGENES PRODUCTOS */
-section:nth-of-type(3) img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 10px;
+.producto{
+    text-align:center;
+    margin-top:50px;
 }
 
-/* FOOTER */
+.producto img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+
+    background-color:#cc871f;
+    padding:50px;
+    border-radius:50px;
+    box-sizing:border-box;
+}
+
+.producto p{
+    margin-top:12px;
+    font-family:Georgia, serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#3b2a1a;
+}
+
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 10px;
+}
+
+#login-page {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+#login-page h1 {
+    color: #e96716;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.campo {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.campo label {
+    font-size: 18px;
+    margin-left: 8px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight:bold;
+}
+
+.campo input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 40px;
+    background-color: #f3f3f3;
+    font-size: 18px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.recordar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.recordar input {
+    width: 18px;
+    height: 18px;
+}
+
+.recordar p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.botones-login {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.botones-login button {
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+
+#registro-page{
+    width:50%;
+    margin:40px auto;
+    text-align:center;
+}
+
+#registro-page .campo{
+    width:100%;
+    margin-bottom:25px;
+    text-align:left;
+}
+
+
+#registro-page .campo input{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:40px;
+    background-color:#f3f3f3;
+    padding-left:20px;
+    box-sizing:border-box;
+}
+
+
+#productos-page {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#productos-page h1 {
+    color: #e96316;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    justify-items: center;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    background-color: #cc871f;
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.producto p {
+    margin-top: 12px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b2a1a;
+}
+
+.columnas-locales{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+}
+
+.columna{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.local{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.info-local{
+    width:220px;
+}
+
+.info-local h2{
+    text-align:left;
+    margin:0 0 10px 0;
+    font-size:20px;
+}
+
+.info-local p{
+    text-align:left;
+    margin:0 0 10px 0;
+    font-family: Georgia, serif;
+    font-size:15px;
+    color: #3b2a1a;
+}
+
+.abierto{
+    display:inline-block;
+    background-color:green;
+    color:white;
+    padding:8px 15px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.favorito{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color: #cc871f;
+    color: #3b2a1a;
+    border:none;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.volver-locales{
+    text-align:center;
+    margin-top:60px;
+}
+.local img{
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.producto img{
+    width: 200px !important;
+    height: 200px !important;
+}
+
+
+#contacto-page{
+    width:60%;
+    margin:40px auto;
+}
+
+
+.dato-contacto{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    width:500px;
+    margin:0 auto 35px auto;
+}
+
+
+.dato-contacto img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+
+    background-color: #cc871f;
+    padding:25px;
+    border-radius:10px;
+}
+
+.red-social{
+    display:block;
+    font-size:24px;
+    font-weight:bold;
+    color: #3b2a1a;
+    margin-bottom:8px;
+}
+
+.info-contacto{
+    display:block;
+    font-size:18px;
+    color:#3b2a1a;
+}
+
+.mensaje{
+    width:600px;
+    margin:50px auto 0 auto;
+}
+
+.mensaje label{
+    display:block;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.mensaje textarea{
+    width:100%;
+    height:180px;
+    border:none;
+    border-radius:15px;
+    padding:15px;
+    font-size:18px;
+    box-sizing:border-box;
+    resize:none;
+    background-color:#f3f3f3;
+}
+
+.botones-contacto{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.botones-contacto button{
+    width:160px;
+    height:50px;
+    border-radius:30px;
+    font-size:18px;
+}
+#mensaje-enviado{
+    text-align:center;
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:15px;
 }
